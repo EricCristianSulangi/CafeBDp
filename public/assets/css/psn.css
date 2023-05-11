@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');   
+
+
+:root{
+    --bodyback: #ffeaed;
+    --textColor:#1b2741;
+    --starColor:#f67034;
+    --sectionback:#f7f6f9;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(40deg,  #FAF8F1  0%, #6096B4 60%);
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+.conatiner{
+     width: 80vh;
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+.header{
+    width: 100%;
+    text-align: center;
+}
+.header h1{
+    margin-top: 2%;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #FCFFE7;
+}
+.products{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.product{
+    position: relative;
+    background-color: var(--sectionback);
+    width: 290px;
+    height: 100%;
+    box-shadow: 0 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:20px 20px 40px;
+    border-radius: 10px;
+    transition: .3s;
+    max-width: 400px;
+    max-height: 400px;
+}
+.product:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.image{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    place-items: center;
+}
+.image img{
+    width: 240px;
+
+}
+.nameprice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nameprice h3{
+    font-size: 2em;
+    text-transform: capitalize; 
+    color: var(--textColor);
+}
+.nameprice span{
+    font-size:  1.5em;
+    color: var(--textColor);
+}
+.product p{
+    font-size: 18px;
+    line-height: 20px;
+}
+.stars{
+    font-size: 1.3em;
+    color: var(--starColor);
+}
+.bay{
+    position: absolute;
+    bottom:20px;
+    right: 20px;
+}
+.bay button{
+    padding: 10px 20px;
+    border-radius: 7px;
+    border:none;
+    background-color: var(--textColor);
+    color: var(--sectionback);
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+.bay button:hover{
+    transform: scale(1.1);
+}
+.mo .contaner{
+    margin-top: 3%;
+}
+.btn{
+transition: .5s;
+}
+.btn:hover{
+transform: translateY(-15px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
